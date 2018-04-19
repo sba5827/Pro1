@@ -2,8 +2,10 @@
 
 using namespace std;
 
-int main(int argc, char** args)
+int main(int argc, char* args[])
 {
-    cout << "Hello world!" << endl;
+    for(int i = 0; i < argc; ++i){
+        cout << i << ": " << args[i] << endl;
+    }
     return 0;
 }
